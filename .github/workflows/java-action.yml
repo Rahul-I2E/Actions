@@ -30,6 +30,17 @@ jobs:
 
     - name: Run tests
       run: mvn test
+
+    - name: Copy jar to repo
+      run: cp target/GitHubAction-0.0.1-SNAPSHOT.jar ./GitHubAction-0.0.1-SNAPSHOT.jar
+
+    - name: Commit jar back to repository
+      run: |
+        git config --global user.name "Rahul-I2E"
+        git config --global user.email "rahul.bhawsar@i2econsulting.com"
+        git add GitHubAction-0.0.1-SNAPSHOT.jar
+        git commit -m "Add built jar"
+        git push
   build2:
     runs-on: ubuntu-latest
 
