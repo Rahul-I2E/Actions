@@ -39,7 +39,7 @@ jobs:
         git config --global user.name "Rahul-I2E"
         git config --global user.email "rahul.bhawsar@i2econsulting.com"
         git add GitHubAction-0.0.1-SNAPSHOT.jar
-        git commit -m "Add built jar"
+        git commit -m "Add built new jar"
         git push
   build2:
     runs-on: ubuntu-latest
