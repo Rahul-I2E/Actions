@@ -41,7 +41,7 @@ jobs:
         git remote set-url origin https://$GITHUB_ACTOR:${{ secrets.ACTIONS_PAT }}@github.com/${{ github.repository }}.git
         git add GitHubAction-0.0.1-SNAPSHOT.jar
         git commit -m "Add built jar"
-        git push
+        git push origin main
   build2:
     runs-on: ubuntu-latest
 
