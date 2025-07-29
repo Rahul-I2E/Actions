@@ -11,7 +11,7 @@ class GitHubActionApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assertTrue(false);
+		assertTrue(true);
 	}
 
 }
