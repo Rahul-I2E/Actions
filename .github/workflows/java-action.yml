@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,7 +42,7 @@ jobs:
         git commit -m "Add built change jar"
         git push origin main
   build2:
-	needs: build
+	needs: test
     runs-on: ubuntu-latest
 
     steps:
