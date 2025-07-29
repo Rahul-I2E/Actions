@@ -42,6 +42,7 @@ jobs:
         git commit -m "Add built change jar"
         git push origin main
   build2:
+	needs: build
     runs-on: ubuntu-latest
 
     steps:
