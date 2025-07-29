@@ -8,6 +8,7 @@ class GitHubActionApplicationTests {
 
 	@Test
 	void contextLoads() {
+		assertTrue(true)
 	}
 
 }
